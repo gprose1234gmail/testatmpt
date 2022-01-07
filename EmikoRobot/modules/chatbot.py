@@ -434,9 +434,10 @@ async def inuka(client, message):
 
 
 __help__ = """
-❂ Siesta AI is the only ai system which can detect & reply upto 200 language's
+❂ luna AI is the only ai system which can detect & reply upto 200 language's
 ❂ /chatbot [ON/OFF]: Enables and disables AI Chat mode.
 ❂ /chatbot EN : Enables English only chatbot.
+ALAN WALKER LUNA AI WAS ENABLED HERE .
 """
 
 __mod_name__ = "Chatbot"
