@@ -1,18 +1,17 @@
 {
-      "name": "Siesta Robot",
-      "description": "A Powerful Telegram group management bot with anime theme.",
+      "name": "Natsuki",
+      "description": "An Anime themed Telegram group management bot Natsuki.",
+      "logo": "https://telegra.ph/file/c9a53e4436c3309a5a5fd.jpg",
       "keywords": [
          "telegram",
-         "advance",
+         "anime",
          "group",
          "manager",
-         "naorobot"
-      ],
-    
-   "logo":    "https://telegra.ph/file/566d0f3fb2107bd8ecb27.jpg",  
-   "repository": "https://github.com/shiinobu/https://github.com/shiinobu/SiestaRobot",
+         "Ankivector"
+      ],   
+   "repository": "https://github.com/Sadew451/Natsuki",
    "addons": [
-          {
+      {
          "options": {
             "version": "12"
          },
@@ -21,12 +20,12 @@
    ],
    "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-python"
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-    }
-  ],  
+      "url": "heroku/python"
+    }     
+  ],      
    "env": {
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
@@ -51,63 +50,26 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "945137470"
-     },
-
-      "STRING_SESSION": {
-         "description": "Fill with telethon string session.",
-         "required": true,
-         "value": "" 
+         "value": "2027510494"
       },
-      "HEROKU_API_KEY": {
-        "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
-        "value": ""
-      },
-      "HEROKU_APP_NAME": {
-        "description": "Enter the Heroku app name here (Must an exact same name with your input above).",
-        "required": false
-      },
-      "BOT_USERNAME": {
-         "description": "username of your bot without the @",
-         "value": "siestaxbot"
-      },
-
-      "BOT_ID": {
-         "description": "to get your bot_id using other bot or userbot",
-         "value": ""
-      },
-
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "saint_foire"
+         "value": "Itz_Sadew"
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to masha support than consider you made an enemy.",
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "machinaxsupport"
+         "value": "NatsukiSupport_Official"
       },
-      "MONGO_DB_URI": {
-         "description": "Required for database connections.",
-         "required": true,
-         "value": ""
-      },
-      "IBM_WATSON_CRED_URL": {
-         "description": "This is required for the speech to text module. Get your USERNAME from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-         "required": false
-     },
-     "IBM_WATSON_CRED_PASSWORD": {
-        "description": "This is required for the speech to text module. Get your PASSWORD from https://console.bluemix.net/docs/services/speech-to-text/getting-started.html",
-        "required": false
-     },
-     "EVENT_LOGS": {
+      "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001237968047"
+         "value": "-123456798"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001180007354"
+         "value": "-123456798"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
@@ -118,25 +80,13 @@
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
          "value": "-xyz"
-     }, 
-
-      "API_OPENWEATHER": {
-        "description": "Get your own APPID from https://api.openweathermap.org/data/2.5/weather",
-        "value": "",
-        "required": false
       },
-
       "DEV_USERS": {
-         "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Masha support then keep the current ID's here at they are and add yours.",
+         "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": ""
-     },
-        "ARQ_API": {
-            "description": "Get this from @ARQRobot.",
-            "required": true
-        },
-
-      "SW_API": {
+         "value": "2027510494"
+      },
+      "SPAMWATCH_API": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
          "value": ""
@@ -148,22 +98,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": ""
+         "value": "2027510494"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": ""
+         "value": "2027510494"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": ""
+         "value": "2027510494"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": ""
+         "value": "2027510494"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -180,14 +130,14 @@
          "value": ""
       },
       "URL": {
-         "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
+         "description": "The Heroku App URL",
          "required": false,
-         "value": ""
+         "value": "https://<appname>.herokuapp.com/"
       },
-      "NO_LOAD": {
+      "No_LOAD": {
          "description": "Dont load these modules cause they shit, space separation",
          "required": false,
-         "value": "rss"
+         "value": "cleaner rss connection"
       }, 
       "BL_CHATS": {
          "description": "List of chats you want blacklisted.",
@@ -207,10 +157,11 @@
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
          "value": "True"
       },
-        "ARQ_API": {
-            "description": "Get this from @ARQRobot.",
-            "required": true
-        },
+      "AI_API_KEY": {
+      "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
+         "required": false,
+         "value": ""
+      },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
@@ -221,6 +172,14 @@
          "required": false,
          "value": ""
       }
-      
-   }
+   },
+   "keywords": [
+      "telegram",
+      "anime",
+      "group",
+      "manager",
+      "Natsuki"
+   ],
+   "name": "Natsuki",
+   "repository": "https://github.com/Sadew451/Natsuki"
 }
