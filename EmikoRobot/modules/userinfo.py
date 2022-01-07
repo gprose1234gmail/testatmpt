@@ -251,10 +251,10 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Getting info...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>connecting to coolmoon_database...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╔═━「<b> Appraisal results:</b> 」\n"
+        f"╔═━「<b> coolmoon results:</b> 」\n"
         f"✪ ID: <code>{user.id}</code>\n"
         f"✪ First Name: {html.escape(user.first_name)}"
     )
@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "support", url="https://t.me/lunasupportz"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "fed", url="https://t.me/tamilchating_fed")
                         ],
                     ]
                 ),
@@ -371,9 +371,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/KennedyProject/44"),
+                                "support", url="https://t.me/lunasupportz"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/KennedyProject/43")
+                                "rose fed ", url="https://t.me/tamilchating_fed")
                         ],
                     ]
                 ),
@@ -569,7 +569,7 @@ When marked as AFK, any mentions will be replied to with a message stating that 
   - brb <reason>: Same as the afk command, but not a command. 
   
 *What is that health thingy?*
- Come and see [HP System explained](https://t.me/KennedyProject/44)
+ Come and see [HP System explained](https://t.me/lunasupportz)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio, run_async=True)
