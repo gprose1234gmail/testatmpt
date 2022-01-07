@@ -82,17 +82,19 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/b8fe73c5ad42d10d63f7b.jpg)
-────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
-✪ Hit /help to see my available commands.
+[thecoolmoon](https://telegra.ph/file/52b1b195f0d7df5ff79b2.jpg)
+╔ /start: Starts me! You've probably already used this.
+╠ /help: Click this, I'll let you know about myself!
+╠ /donate: You can support my creater using this command.
+╠ /settings : Uptime:* {} , {} *users, across* {} *chats.*
+╚══║in PM: will send you your settings for all supported modules.
+   ╚ in a Group: will redirect you to pm, with all that chat's settings.
+   Powered by : [ALAN WALKER](https://t.me/tamilchating_fed)
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Siesta Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="thecoolmoon", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +104,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Siesta To Your Group ➗", url="t.me/Siestaxbot?startgroup=new"),
+            text="➗ Add coolmoon To Your Group ➗", url="t.me/Siestaxbot?startgroup=new"),
     ],
 ]
 
@@ -110,10 +112,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/b8fe73c5ad42d10d63f7b.jpg"
+EMI_IMG = ""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @saint_foire \
+ You can support the project by contacting [ALAN WALKER](https://t.me/alpha_romeo_06) \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -229,7 +231,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Siesta Robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm thecoolmoon!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -360,7 +362,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Siesta*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *thecoolmoon*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -382,7 +384,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Credits", callback_data="emiko_credit"),
                  ],
                  [
-                    InlineKeyboardButton(text="Source Code", url="https://github.com/shiinobu/SiestaRobot"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/lunasupportz"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -408,7 +410,7 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, EmikoRobot now ready to manage your group."
+            "\nCongragulations, themoonbot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -436,13 +438,13 @@ def emiko_about_callback(update, context):
     elif query.data == "emiko_support":
         query.message.edit_text(
             text="*๏ Siesta support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Siesta.",
+            "\nJoin My Support Group/Channel for see or report a problem on thecoolmoon.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/machinaxupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/machinaxupdate"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/lunasupportz"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/luna_officials"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -455,18 +457,18 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Siesta\n"
+            text=f"๏ Credis for coolmoon\n"
             "\nHere Developers Making And Give Inspiration For Made The Siesta Robot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Vain", url="https://github.com/shiinobu"),
-                    InlineKeyboardButton(text="Sena-Ex", url="https://github.com/kennedy-ex"),
+                    InlineKeyboardButton(text="ALAN WALKER", url="https://t.me/alpha_romeo_06"),
+                    InlineKeyboardButton(text="GP-ROSI", url="https://t.me/Gplove_Rp"),
                  ],
                  [
-                    InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
-                    InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
+                    InlineKeyboardButton(text="ROSE FED", url="https://t.me/tamilchating_fed"),
+                    InlineKeyboardButton(text="karma", url="https://t.me/karmaappeal"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -737,7 +739,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 945137470:
+        if OWNER_ID !=1930954213:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -786,7 +788,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Siesta Robot Started!**
+                f"""**thecoolmoon Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
